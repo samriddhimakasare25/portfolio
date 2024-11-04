@@ -2,7 +2,7 @@ import { AboutMe, AnimatedTitle, Border, ContactForm, Container, FadeIn, GridPat
 import { Archive, BookOpen, BriefCase, Envelope } from '@/icons';
 
 export const metadata = {
-  title: 'Alejandro Gomez',
+  title: 'Samriddhi Makasare',
   description: 'My personal portfolio.',
 };
 
@@ -37,7 +37,7 @@ const content: contentSection[] = [
       title: 'Work Experience',
       description: (
         <div>
-          <span className="text-work_experience_orange">Semi-Senior Engineer</span> with <span className="text-work_experience_orange">4 years</span> of experience in the software industry
+          <span className="text-work_experience_orange">Software Engineer</span> with <span className="text-work_experience_orange">2 years</span> of experience in the software industry
         </div>
       ),
     },
@@ -109,7 +109,7 @@ export default function Index() {
           <div className="min-h-screen relative">
             <FadeIn className="max-w-5xl pt-40 md:pt-[20vh] 2xl:pt-[30vh]">
               <h1 className="font-display text-5xl font-medium tracking-tight [text-wrap:balance] sm:text-6xl">
-                Alejandro Gomez<span className="wave">👋</span>
+                Samriddhi Makasare<span className="wave">👋</span>
               </h1>
               <div className="flex mt-3 mb-1">
                 Looking for a job{' '}
@@ -119,7 +119,7 @@ export default function Index() {
                 </span>{' '}
                 / &#8205; <AnimatedTitle />
               </div>
-              <p className="max-w-3xl">26 yo software engineer with a B.S. in Computer Science and Technology with experience in Front-End and Back-End technologies.</p>
+              <p className="max-w-3xl">19 year software engineer with a B.S. in Computer Science with a minor in UX Design  with experience in Front-End and Back-End technologies.</p>
             </FadeIn>
 
             <Socials />

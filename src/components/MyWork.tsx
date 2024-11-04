@@ -17,16 +17,16 @@ interface Project {
 const projects: Project[] = [
   {
     href: '/apps/realtor-simplified',
-    name: 'Realtor Simplified',
+    name: 'Geese Love Merch',
     full: true,
-    description: ' saas platform that enables realtors to deploy a professional website in minutes.',
+    description: '                   WINNER OF HACK THE NORTH HACKATHON 2024.',
     image: { src: realtorSimplified },
   },
   {
     href: '/apps/loteria-monarca',
-    name: 'Loteria Monarca',
+    name: 'SafeGuard',
     full: true,
-    description: ' online platform to register and play Loteria Mexicana.',
+    description: '                      WINNER OF  TECHNOVA HACKATHON 2023.',
     image: { src: loteriaMonarca },
   },
   {
