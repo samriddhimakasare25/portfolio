@@ -1,5 +1,6 @@
 import { AboutMe, AnimatedTitle, Border, ContactForm, Container, FadeIn, GridPattern, MyWork, Section, SectionHeader, Skills, Socials, Stars, WorkExperience } from '@/components';
 import { Archive, BookOpen, BriefCase, Envelope } from '@/icons';
+import { NextPage } from 'next';
 
 export const metadata = {
   title: 'Samriddhi Makasare',
@@ -14,7 +15,7 @@ export const sections = [
   { index: 4, title: 'Contact Me', id: 'contact' },
 ];
 
-interface contentSection {
+interface ContentSection {
   id: string;
   sectionHeader: {
     icon: React.ReactNode;
@@ -24,7 +25,7 @@ interface contentSection {
   mainContent: React.ReactNode;
 }
 
-const content: contentSection[] = [
+const content: ContentSection[] = [
   {
     id: sections[1].id,
     sectionHeader: {
@@ -55,8 +56,7 @@ const content: contentSection[] = [
       title: 'Skills',
       description: (
         <div>
-          <span className="text-skills_purple">Full Stack</span> software developer with experience in <span className="text-skills_purple">Front-End</span> and{' '}
-          <span className="text-skills_purple">Back-End</span> technologies
+          <span className="text-skills_purple">Full Stack</span> software developer with experience in <span className="text-skills_purple">Front-End</span> and <span className="text-skills_purple">Back-End</span> technologies
         </div>
       ),
     },
@@ -100,7 +100,7 @@ const content: contentSection[] = [
   },
 ];
 
-export default function Index() {
+const Index: NextPage = () => {
   return (
     <div className="w-full overflow-y-auto overflow-x-hidden">
       <GridPattern />
@@ -119,7 +119,7 @@ export default function Index() {
                 </span>{' '}
                 / &#8205; <AnimatedTitle />
               </div>
-              <p className="max-w-3xl">19 year software engineer with a B.S. in Computer Science with a minor in UX Design  with experience in Front-End and Back-End technologies.</p>
+              <p className="max-w-3xl">19-year-old software engineer with a B.S. in Computer Science and a minor in UX Design, with experience in Front-End and Back-End technologies.</p>
             </FadeIn>
 
             <Socials />
@@ -128,7 +128,7 @@ export default function Index() {
               <span></span>
               <span></span>
             </div>
-          </div>{' '}
+          </div>
           <Border />
           <AboutMe />
         </Container>
@@ -137,7 +137,7 @@ export default function Index() {
       <div id="stars-container" className="relative">
         <Container>
           <Stars id="stars-container" />
-          {content.map((section: contentSection) => (
+          {content.map((section) => (
             <Section key={section.id} id={section.id} className="pt-24 mt-28">
               <Border />
               <SectionHeader {...section.sectionHeader} />
@@ -148,4 +148,6 @@ export default function Index() {
       </div>
     </div>
   );
-}
+};
+
+export default Index;
