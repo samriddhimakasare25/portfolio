@@ -1,14 +1,20 @@
 import client from '@/config/postmark';
 
 export async function POST(request: Request) {
-  const body = await request.json();
   try {
-    const fromEmail = process.env.EMAIL_FROM as string; // Type assertion
-    const toEmail = process.env.EMAIL_TO as string; // Type assertion
+    const body = await request.json();
 
-    // Optional: Add checks to throw an error if the environment variables are not defined
+    // Type assertion with environment variable checks
+    const fromEmail = process.env.EMAIL_FROM;
+    const toEmail = process.env.EMAIL_TO;
+
     if (!fromEmail || !toEmail) {
       throw new Error('Environment variables EMAIL_FROM and EMAIL_TO must be set.');
+    }
+
+    // Validate the incoming request body
+    if (!body.person_name || !body.company || !body.message || !body.email) {
+      throw new Error('Missing required fields in the request body.');
     }
 
     await client.sendEmail({
@@ -23,8 +29,10 @@ export async function POST(request: Request) {
       `,
       ReplyTo: body.email,
     });
+
     return new Response('ok', { status: 200 });
   } catch (e) {
-    return new Response('error', { status: 500 });
+    console.error('Error occurred while sending email:', e); // Log the error for debugging
+    return new Response('Internal Server Error', { status: 500 });
   }
 }
