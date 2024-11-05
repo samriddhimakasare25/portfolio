@@ -176,7 +176,7 @@ interface FileWrapperProps extends FileProps {
   sections: Section[];
 }
 
-function File({ name, icon, url, indent, sections = [] }: FileWrapperProps) {
+function File({ name, icon, url, indent, sections }: FileWrapperProps) {
   return (
     <>
       <FileContent name={name} icon={icon} url={url} indent={indent} active={sections.length > 0} />
