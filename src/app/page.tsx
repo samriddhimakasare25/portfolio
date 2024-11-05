@@ -7,7 +7,7 @@ export const metadata = {
   description: 'My personal portfolio.',
 };
 
-export const sections = [
+const sections = [
   { index: 0, title: 'About Me', id: 'about-me' },
   { index: 1, title: 'Work Experience', id: 'work-experience' },
   { index: 2, title: 'Skills', id: 'skills' },
