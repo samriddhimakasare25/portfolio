@@ -1,14 +1,12 @@
 import { AboutMe, AnimatedTitle, Border, ContactForm, Container, FadeIn, GridPattern, MyWork, Section, SectionHeader, Skills, Socials, Stars, WorkExperience } from '@/components';
 import { Archive, BookOpen, BriefCase, Envelope } from '@/icons';
 
-// Metadata for the page
 export const metadata = {
   title: 'Samriddhi Makasare',
   description: 'My personal portfolio.',
 };
 
-// Define sections as a constant variable (not exported)
-const sections = [
+export const sections = [
   { index: 0, title: 'About Me', id: 'about-me' },
   { index: 1, title: 'Work Experience', id: 'work-experience' },
   { index: 2, title: 'Skills', id: 'skills' },
@@ -16,8 +14,17 @@ const sections = [
   { index: 4, title: 'Contact Me', id: 'contact' },
 ];
 
-// Define content for each section
-const content = [
+interface contentSection {
+  id: string;
+  sectionHeader: {
+    icon: React.ReactNode;
+    title: string;
+    description: React.ReactNode;
+  };
+  mainContent: React.ReactNode;
+}
+
+const content: contentSection[] = [
   {
     id: sections[1].id,
     sectionHeader: {
@@ -30,7 +37,7 @@ const content = [
       title: 'Work Experience',
       description: (
         <div>
-          <span className="text-work_experience_orange">Software Engineer</span> with <span className="text-work_experience_orange">2 years</span> of experience in the software industry
+          <span className="text-work_experience_orange">Software Engineer</span> with <span className="text-work_experience_orange">4 years</span> of experience in the software industry
         </div>
       ),
     },
@@ -102,7 +109,7 @@ export default function Index() {
           <div className="min-h-screen relative">
             <FadeIn className="max-w-5xl pt-40 md:pt-[20vh] 2xl:pt-[30vh]">
               <h1 className="font-display text-5xl font-medium tracking-tight [text-wrap:balance] sm:text-6xl">
-                Samriddhi Makasare <span className="wave">👋</span>
+                Alejandro Gomez<span className="wave">👋</span>
               </h1>
               <div className="flex mt-3 mb-1">
                 Looking for a job{' '}
@@ -112,7 +119,7 @@ export default function Index() {
                 </span>{' '}
                 / &#8205; <AnimatedTitle />
               </div>
-              <p className="max-w-3xl">19 year software engineer with a B.S. in Computer Science with a minor in UX Design with experience in Front-End and Back-End technologies.</p>
+              <p className="max-w-3xl">19 year software engineer with a B.S. in Computer Science with a minor in Uwith experience in Front-End and Back-End technologies.</p>
             </FadeIn>
 
             <Socials />
@@ -130,7 +137,7 @@ export default function Index() {
       <div id="stars-container" className="relative">
         <Container>
           <Stars id="stars-container" />
-          {content.map((section) => (
+          {content.map((section: contentSection) => (
             <Section key={section.id} id={section.id} className="pt-24 mt-28">
               <Border />
               <SectionHeader {...section.sectionHeader} />
