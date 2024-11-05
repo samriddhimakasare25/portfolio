@@ -1,13 +1,12 @@
 import { AboutMe, AnimatedTitle, Border, ContactForm, Container, FadeIn, GridPattern, MyWork, Section, SectionHeader, Skills, Socials, Stars, WorkExperience } from '@/components';
 import { Archive, BookOpen, BriefCase, Envelope } from '@/icons';
-import { NextPage } from 'next';
 
 export const metadata = {
   title: 'Samriddhi Makasare',
   description: 'My personal portfolio.',
 };
 
-const sections = [
+export const sections = [
   { index: 0, title: 'About Me', id: 'about-me' },
   { index: 1, title: 'Work Experience', id: 'work-experience' },
   { index: 2, title: 'Skills', id: 'skills' },
@@ -15,7 +14,7 @@ const sections = [
   { index: 4, title: 'Contact Me', id: 'contact' },
 ];
 
-interface ContentSection {
+interface contentSection {
   id: string;
   sectionHeader: {
     icon: React.ReactNode;
@@ -25,7 +24,7 @@ interface ContentSection {
   mainContent: React.ReactNode;
 }
 
-const content: ContentSection[] = [
+const content: contentSection[] = [
   {
     id: sections[1].id,
     sectionHeader: {
@@ -56,7 +55,8 @@ const content: ContentSection[] = [
       title: 'Skills',
       description: (
         <div>
-          <span className="text-skills_purple">Full Stack</span> software developer with experience in <span className="text-skills_purple">Front-End</span> and <span className="text-skills_purple">Back-End</span> technologies
+          <span className="text-skills_purple">Full Stack</span> software developer with experience in <span className="text-skills_purple">Front-End</span> and{' '}
+          <span className="text-skills_purple">Back-End</span> technologies
         </div>
       ),
     },
@@ -100,7 +100,7 @@ const content: ContentSection[] = [
   },
 ];
 
-const Index: NextPage = () => {
+export default function Index() {
   return (
     <div className="w-full overflow-y-auto overflow-x-hidden">
       <GridPattern />
@@ -109,7 +109,7 @@ const Index: NextPage = () => {
           <div className="min-h-screen relative">
             <FadeIn className="max-w-5xl pt-40 md:pt-[20vh] 2xl:pt-[30vh]">
               <h1 className="font-display text-5xl font-medium tracking-tight [text-wrap:balance] sm:text-6xl">
-                Samriddhi Makasare<span className="wave">👋</span>
+                Samriddhi Makasare <span className="wave">👋</span>
               </h1>
               <div className="flex mt-3 mb-1">
                 Looking for a job{' '}
@@ -119,7 +119,7 @@ const Index: NextPage = () => {
                 </span>{' '}
                 / &#8205; <AnimatedTitle />
               </div>
-              <p className="max-w-3xl">19-year-old software engineer with a B.S. in Computer Science and a minor in UX Design, with experience in Front-End and Back-End technologies.</p>
+              <p className="max-w-3xl">19 year software engineer with a B.S. in Computer Science with a minor in UX Design with experience in Front-End and Back-End technologies.</p>
             </FadeIn>
 
             <Socials />
@@ -128,7 +128,7 @@ const Index: NextPage = () => {
               <span></span>
               <span></span>
             </div>
-          </div>
+          </div>{' '}
           <Border />
           <AboutMe />
         </Container>
@@ -137,7 +137,7 @@ const Index: NextPage = () => {
       <div id="stars-container" className="relative">
         <Container>
           <Stars id="stars-container" />
-          {content.map((section) => (
+          {content.map((section: contentSection) => (
             <Section key={section.id} id={section.id} className="pt-24 mt-28">
               <Border />
               <SectionHeader {...section.sectionHeader} />
@@ -148,6 +148,4 @@ const Index: NextPage = () => {
       </div>
     </div>
   );
-};
-
-export default Index;
+}
