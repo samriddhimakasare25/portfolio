@@ -37,7 +37,7 @@ const content: contentSection[] = [
       title: 'Work Experience',
       description: (
         <div>
-          <span className="text-work_experience_orange">Semi-Senior Engineer</span> with <span className="text-work_experience_orange">4 years</span> of experience in the software industry
+          <span className="text-work_experience_orange">Full Stack Developer</span> with <span className="text-work_experience_orange">2 years</span> of experience in the software industry
         </div>
       ),
     },

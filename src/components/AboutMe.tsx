@@ -45,10 +45,10 @@ export default function AboutMe() {
                 <div className="border-y py-2 border-gray-500/30 mb-6">
                   <div className="flex flex-wrap gap-x-6">
                     <div className="text-lg font-bold leading-9 tracking-tight flex gap-1">
-                      <p className="text-white">Spanish</p> - <p className="text-gray-500">Native</p>
+                      <p className="text-white">English</p> - <p className="text-gray-500">Advanced</p>
                     </div>
                     <div className="text-lg font-bold leading-9 tracking-tight flex gap-1">
-                      <p className="text-white">English</p> - <p className="text-gray-500">Advanced</p>
+                      <p className="text-white">Marathi</p> - <p className="text-gray-500">Native</p>
                     </div>
                   </div>
                 </div>
