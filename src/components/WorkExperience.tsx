@@ -11,7 +11,7 @@ const experience = [
       'Developed and maintained React Native components, screens, and features for the mobile app using TDD practices.',
       'Collaborated with other developers to implement new features in a way that is consistent with existing codebase conventions.',
     ],
-    image: { url: '/work/westondev.jpg', height: 96, width: 96, className: 'rounded-none' },
+    image: { url: '/work/aikyaglobal_logo.jpeg', height: 96, width: 96, className: ''},
   },
   {
     title: 'Popln | UX Designer.',
@@ -21,7 +21,7 @@ const experience = [
       'Developed swift IOS app from scratch and modified existing ones, by adding new screens, transitions and styling.',
       'Developed software by following the Agile Methodology.',
     ],
-    image: { url: '/work/zenith.png', height: 34, width: 110, className: '' },
+    image: { url: '/work/Popln.jpeg', height: 96, width: 96, className: ''},
   },
   {
     title: 'Zeuty | CEO/Founder.',
@@ -31,7 +31,7 @@ const experience = [
       'Added functionality by creating Strapi headless CMS endpoints.',
       'Made changes to their application using React, Typescript, MaterialUI, CSS, AWS S3, PostgreSQL.',
     ],
-    image: { url: '/work/bohrim.jpg', height: 96, width: 96, className: '' },
+    image: { url: '/work/zeuty.jpeg', height: 96, width: 96, className: '' },
   },
   {
     title: 'Easy Artisan Website | Marketing Intern .',
@@ -41,7 +41,7 @@ const experience = [
       'Designed and built an initial demo with HTML, EJS, CSS, VanillaJS & JQuery, Bootstrap, ExpressJS, MongoDB, and Heroku.',
       'After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.',
     ],
-    image: { url: '/work/loteria.png', height: 96, width: 144, className: 'bg-white' },
+    image: { url: '/work/easy.png', height: 96, width: 96, className: 'bg-white' },
   },
   {
     title: 'Lotus Addiction Therapy | Lead Frontend Developer.',
@@ -51,7 +51,7 @@ const experience = [
       'Designed and built an initial demo with HTML, EJS, CSS, VanillaJS & JQuery, Bootstrap, ExpressJS, MongoDB, and Heroku.',
       'After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.',
     ],
-    image: { url: '/work/loteria.png', height: 96, width: 144, className: 'bg-white' },
+    image: { url: '/work/l.jpeg', height: 96, width: 96, className: 'bg-white'},
   },
   {
     title: 'Site 4 U | Project Manager.',
@@ -61,7 +61,7 @@ const experience = [
       'Designed and built an initial demo with HTML, EJS, CSS, VanillaJS & JQuery, Bootstrap, ExpressJS, MongoDB, and Heroku.',
       'After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.',
     ],
-    image: { url: '/work/loteria.png', height: 96, width: 144, className: 'bg-white' },
+    image: { url: '/work/site.jpeg', height: 96, width: 96, className: 'bg-white' },
   },
   {
     title: 'Laurier Computing Society | Game Designer.',
@@ -71,7 +71,7 @@ const experience = [
       'Designed and built an initial demo with HTML, EJS, CSS, VanillaJS & JQuery, Bootstrap, ExpressJS, MongoDB, and Heroku.',
       'After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.',
     ],
-    image: { url: '/work/loteria.png', height: 96, width: 144, className: 'bg-white' },
+    image: { url: '/work/LCS.jpeg', height: 96, width: 96, className: 'bg-white' },
   },
   {
     title: 'Sustainable Life App | UX Designer.',
@@ -81,7 +81,17 @@ const experience = [
       'Designed and built an initial demo with HTML, EJS, CSS, VanillaJS & JQuery, Bootstrap, ExpressJS, MongoDB, and Heroku.',
       'After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.',
     ],
-    image: { url: '/work/loteria.png', height: 96, width: 144, className: 'bg-white' },
+    image: { url: '/work/s.jpeg', height: 96, width: 96, className: 'bg-white' },
+  },
+  {
+    title: 'City of Mississauga | MiWay Transit Ambassador.',
+    date: 'Jan 2020 - March 2021',
+    description: [
+      'Tasked with creating a web app to play ‘Loteria Mexicana’ online with the technology of my choosing.',
+      'Designed and built an initial demo with HTML, EJS, CSS, VanillaJS & JQuery, Bootstrap, ExpressJS, MongoDB, and Heroku.',
+      'After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.',
+    ],
+    image: { url: '/work/m.jpeg', height: 96, width: 96, className: 'bg-white' },
   },
 ];
 
