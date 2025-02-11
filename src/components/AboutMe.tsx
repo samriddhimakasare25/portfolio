@@ -15,7 +15,7 @@ export default function AboutMe() {
         title="About Me"
         description={
           <div>
-            I&apos;m a <span className="text-about_me_green">software developer</span> specialized on <span className="text-about_me_green">Web Applications</span>
+            I&apos;m a <span className="text-about_me_green">softwar developer</span> specialized on <span className="text-about_me_green">Web Applications</span>
           </div>
         }
       />
