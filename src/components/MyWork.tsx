@@ -24,9 +24,9 @@ const projects: Project[] = [
   },
   {
     href: '/apps/loteria-monarca',
-    name: 'Loteria Monarca',
+    name: 'Canada Top Student',
     full: true,
-    description: ' online platform to register and play Loteria Mexicana.',
+    description: ' Out of hundreds of applicants, I was one of 32 students selected for a case competition event hosted by Scotiabank.',
     image: { src: loteriaMonarca },
   },
   {

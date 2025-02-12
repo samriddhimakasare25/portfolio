@@ -84,7 +84,7 @@ const experience = [
     image: { url: '/work/s.jpeg', height: 96, width: 96, className: 'bg-white' },
   },
   {
-    title: 'City of Mississauga | MiWay Transit Ambassador.',
+    title: 'City of Mississauga | MiWay Campus Ambassador.',
     date: 'Jan 2020 - March 2021',
     description: [
       'Tasked with creating a web app to play ‘Loteria Mexicana’ online with the technology of my choosing.',

@@ -74,7 +74,7 @@ const content: contentSection[] = [
       title: 'My Work',
       description: (
         <div>
-          Some of <span className="text-my_work_yellow">my work</span> as a full stack <span className="text-my_work_yellow">web</span> developer
+          <span className="text-my_work_yellow"> Some of my personal projects,</span><span className="text-my_work_yellow">  hackathons and case competitions</span> 
         </div>
       ),
     },

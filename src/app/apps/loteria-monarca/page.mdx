@@ -3,13 +3,13 @@ import { loteriaMonarca } from '../../../../public/projects'
 import Image from 'next/image';
 
 export const appData = {
-  industry: 'Entertainment',
-  title: 'Loteria Monarca',
-  description: 'Online platform to play the traditional Mexican game "Loteria Tradicional" & "Loteria de Pocitos" with friends and family.',
+  industry: 'Technology',
+  title: 'Canada Top Student',
+  description: 'Out of hundreds of applicants, I was selected amoung 32 students for a case competition event hosted by Scotiabank.',
   image: loteriaMonarca,
-  date: '2020-02',
-  service: 'Web Application',
-  url: 'https://loteria-online.onrender.com/',
+  date: '2024-12',
+  service: 'Case Competition',
+  url: 'https://www.canva.com/design/DAGX-CFzbHw/13Rgy43UN_qfxyj3xlAJXw/edit?utm_content=DAGX-CFzbHw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
   pathname: '/apps/loteria-monarca',
   framework: 'svelte',
 };
@@ -93,20 +93,20 @@ export const technologies = [
   <Section id="challenge">
     ## Challenge
 
-    Design and develop an online platform that enables users to play "Loteria Tradicional" & "Loteria de Pocitos". Allow players to create their Loteria 'Tables' and 
-    use them on their games.
+   Design and develop an AI-driven platform to make Scotiabank’s services more accessible and user-friendly while addressing user concerns about security and trust. 
+   Focus on how AI can improve the banking experience while ensuring compliance with all protective measures.
 
-    - Master Admin should be able to create and modify 'Events'.
+    - Integrate AI to provide personalized financial advice and automated customer support.
 
-    - Master Admin should be able to start and end 'Events'.
+    - Educate users on how AI improves security and simplifies banking through interactive tutorials and live support.
 
-    - Allow users to buy credits through paypal and mercadopago.
+    - Allow users to securely perform transactions through the AI assistant while maintaining strict security protocols.
 
-    - Authenticate users through email and password, google, and facebook.
+    - Use AI to monitor suspicious activities and alert users in real-time to prevent fraud.
 
-    - Account verification through phone sms.
+    - Ensure AI services comply with regulatory and privacy standards to protect sensitive user data.
 
-    - Allow users to enter an 'Event' with their credits.
+    -Authenticate users through multi-factor authentication, including email, phone SMS, and biometrics (face/fingerprint recognition).
 
   </Section>
 
@@ -118,14 +118,14 @@ export const technologies = [
 
 <AppSolution image='loteria-monarca.png' href={appData.url}>
 
-Loteria Monarca's application is made up of 2 different express servers. Each of this servers is hosted on their own Heroku dyno.
+AI that detects fraud by analysing the user’s spending patterns and flagging irregular activities.
 
-Loteria Monarca's 'App' is the user facing interface. This is where users are able to do all of the actions that are available to them.
+When suspicious activity is recognized, the user will receive an encrypted message to their phone number through Scotia Bank’s secure sending system to authenitcate their identity through  a face ID or finger print scanning.
 
-Loteria Monarca's 'Dashboard' is the admin's interface. Here the admin is able to create and modify 'Events', start and end 'Events', and view the 'Events' results.
+If the user wants to report fraud, they can directly text the message ScotiaBank’s AI chatbot who will provide instructions to direct the user thrgouh the process of reporting the fraud.
 
-After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition 
-the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.
+Scotiabank values handling customer data with appropriate security controls to ensure we’re adhering to bank policies and to minimize the risk of breach. 
+
 
 
 </AppSolution>
