@@ -45,7 +45,7 @@ const experience = [
   },
   {
     title: 'Lotus Addiction Therapy | Lead Frontend Developer.',
-    date: 'Jan 2020 - March 2021',
+    date: 'Dec 2023 - May 2024',
     description: [
       'Led a team of 6 developers, providing technical guidance in React Native and TypeScript, ensuring adherence to best practices and scalable development.',
       'Conducted regular code reviews and progress check-ins, fostering collaboration and improving code quality across the team.',
@@ -55,7 +55,7 @@ const experience = [
   },
   {
     title: 'Site 4 U | Project Manager.',
-    date: 'Jan 2020 - March 2021',
+    date: 'Mar 2024 - Apr 2024',
     description: [
       'Managed a team of 10 developers and designers, ensuring timely delivery of client projects while maintaining high-quality standards.',
       'Acted as the primary liaison between clients and the team, gathering requirements, translating them into actionable tasks, and providing regular progress updates.',
@@ -65,7 +65,7 @@ const experience = [
   },
   {
     title: 'Sustainable Life App | UX Designer.',
-    date: 'Jan 2020 - March 2021',
+    date: 'Feb 2023 - Aug 2023',
     description: [
       'Redesigned the Sustainable Life App’s user interface using Figma, focusing on improving usability, visual appeal, and user engagement.',
       'Developed high-fidelity prototypes and interactive mockups, ensuring a seamless and intuitive user experience aligned with sustainability-focused goals.',
@@ -73,6 +73,7 @@ const experience = [
     ],
     image: { url: '/work/s.jpeg', height: 96, width: 96, className: 'bg-white' },
   }
+  
 ];
 
 export default function WorkExperience() {

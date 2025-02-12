@@ -52,7 +52,7 @@ const projects: Project[] = [
   },
   {
     href: '/apps/impulseux',
-    name: 'Heart Attack Prediction Model',
+    name: 'Heart Attack Prediction',
     full: false,
     description: '',
     image: { src: impulseux },
