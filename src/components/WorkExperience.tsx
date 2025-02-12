@@ -17,9 +17,9 @@ const experience = [
     title: 'Popln | UX Designer.',
     date: 'Dec 2024 - Present',
     description: [
-      'Built an e-commerce site to sell courses online, by using React, Firebase Sass, Bootstrap, and Hotmart.',
-      'Developed swift IOS app from scratch and modified existing ones, by adding new screens, transitions and styling.',
-      'Developed software by following the Agile Methodology.',
+      'Conducted comprehensive user research through surveys and interviews to identify user pain points, enhancing user experience and guiding design decisions for the Popln mobile app.',
+      'Redesigned the entire mobile interface with a user-centric approach, improving navigation and accessibility while maintaining brand consistency.',
+      'Developed high-fidelity prototypes in Figma, incorporating modern design principles and interactive components to deliver a seamless and visually engaging mobile experience.',
     ],
     image: { url: '/work/Popln.jpeg', height: 96, width: 96, className: ''},
   },
@@ -27,9 +27,9 @@ const experience = [
     title: 'Zeuty | CEO/Founder.',
     date: 'Apr 2024 - Present',
     description: [
-      'Worked on their B2B saas platform by communicating with users and making the appropriate changes to the platform, following the scrum methodology.',
-      'Added functionality by creating Strapi headless CMS endpoints.',
-      'Made changes to their application using React, Typescript, MaterialUI, CSS, AWS S3, PostgreSQL.',
+      'Founded and led Zeuty, a student housing platform aimed at solving housing challenges, securing a $5,000 angel grant to kickstart the project.',
+      'Recruited and managed a multidisciplinary team of 30+, including UX designers, business strategists, and frontend/backend developers, fostering collaboration across all departments.',
+      'Spearheading product development and strategic planning to build a PERN stack-based platform, focusing on improving access to reliable housing for students.',
     ],
     image: { url: '/work/zeuty.jpeg', height: 96, width: 96, className: '' },
   },
@@ -37,9 +37,9 @@ const experience = [
     title: 'Easy Artisan Website | Marketing Intern .',
     date: 'Dec 2024 - Feb 2025',
     description: [
-      'Tasked with creating a web app to play ‘Loteria Mexicana’ online with the technology of my choosing.',
-      'Designed and built an initial demo with HTML, EJS, CSS, VanillaJS & JQuery, Bootstrap, ExpressJS, MongoDB, and Heroku.',
-      'After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.',
+      'Created engaging graphics and visual content to enhance brand visibility and align with Asy Artisan’s unique style and target audience.',
+      'Conducted market research to identify key trends and opportunities, refining the brand’s messaging and positioning in the artisan market.',
+      'Developed and implemented a cohesive brand identity, improving brand consistency across digital platforms and increasing audience engagement.',
     ],
     image: { url: '/work/easy.png', height: 96, width: 96, className: 'bg-white' },
   },
@@ -47,9 +47,9 @@ const experience = [
     title: 'Lotus Addiction Therapy | Lead Frontend Developer.',
     date: 'Jan 2020 - March 2021',
     description: [
-      'Tasked with creating a web app to play ====‘Loteria Mexicana’ online with the technology of my choosing.',
-      'Designed and built an initial demo with HTML, EJS, CSS, VanillaJS & JQuery, Bootstrap, ExpressJS, MongoDB, and Heroku.',
-      'After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.',
+      'Led a team of 6 developers, providing technical guidance in React Native and TypeScript, ensuring adherence to best practices and scalable development.',
+      'Conducted regular code reviews and progress check-ins, fostering collaboration and improving code quality across the team.',
+      'Managed project timelines and milestones, ensuring the team met deadlines while delivering a high-quality product aligned with business goals.',
     ],
     image: { url: '/work/l.jpeg', height: 96, width: 96, className: 'bg-white'},
   },
@@ -57,42 +57,22 @@ const experience = [
     title: 'Site 4 U | Project Manager.',
     date: 'Jan 2020 - March 2021',
     description: [
-      'Tasked with creating a web app to play ‘Loteria Mexicana’ online with the technology of my choosing.',
-      'Designed and built an initial demo with HTML, EJS, CSS, VanillaJS & JQuery, Bootstrap, ExpressJS, MongoDB, and Heroku.',
-      'After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.',
+      'Managed a team of 10 developers and designers, ensuring timely delivery of client projects while maintaining high-quality standards.',
+      'Acted as the primary liaison between clients and the team, gathering requirements, translating them into actionable tasks, and providing regular progress updates.',
+      'Oversaw project timelines and resource allocation, ensuring customer expectations were met and projects were delivered on schedule.',
     ],
     image: { url: '/work/site.jpeg', height: 96, width: 96, className: 'bg-white' },
-  },
-  {
-    title: 'Laurier Computing Society | Game Designer.',
-    date: 'Jan 2020 - March 2021',
-    description: [
-      'Tasked with creating a web app to play ‘Loteria Mexicana’ online with the technology of my choosing.',
-      'Designed and built an initial demo with HTML, EJS, CSS, VanillaJS & JQuery, Bootstrap, ExpressJS, MongoDB, and Heroku.',
-      'After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.',
-    ],
-    image: { url: '/work/LCS.jpeg', height: 96, width: 96, className: 'bg-white' },
   },
   {
     title: 'Sustainable Life App | UX Designer.',
     date: 'Jan 2020 - March 2021',
     description: [
-      'Tasked with creating a web app to play ‘Loteria Mexicana’ online with the technology of my choosing.',
-      'Designed and built an initial demo with HTML, EJS, CSS, VanillaJS & JQuery, Bootstrap, ExpressJS, MongoDB, and Heroku.',
-      'After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.',
+      'Redesigned the Sustainable Life App’s user interface using Figma, focusing on improving usability, visual appeal, and user engagement.',
+      'Developed high-fidelity prototypes and interactive mockups, ensuring a seamless and intuitive user experience aligned with sustainability-focused goals.',
+      'Collaborated with cross-functional teams to integrate user feedback and refine design solutions for a more user-centric product.',
     ],
     image: { url: '/work/s.jpeg', height: 96, width: 96, className: 'bg-white' },
-  },
-  {
-    title: 'City of Mississauga | MiWay Campus Ambassador.',
-    date: 'Jan 2020 - March 2021',
-    description: [
-      'Tasked with creating a web app to play ‘Loteria Mexicana’ online with the technology of my choosing.',
-      'Designed and built an initial demo with HTML, EJS, CSS, VanillaJS & JQuery, Bootstrap, ExpressJS, MongoDB, and Heroku.',
-      'After 2/3 months of success and after reaching 15k unique users, 100s of concurrent users on game night, and 12k USD NRR, I made the decision to transition the front end app over to SvelteJs and TailwindCSS for a better user experience and speed, and implemented Stripe and Paypal payment processing.',
-    ],
-    image: { url: '/work/m.jpeg', height: 96, width: 96, className: 'bg-white' },
-  },
+  }
 ];
 
 export default function WorkExperience() {
