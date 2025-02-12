@@ -3,13 +3,13 @@ import Image from 'next/image';
 import { realtorSimplified } from '../../../../public/projects';
 
 export const appData = {
-  industry: 'Real Estate',
-  title: 'Realtor Simplified',
-  description: 'Realtor Simplified is a saas platform that allows you to deploy a real estate website from a selection of templates within minutes.',
+  industry: 'Gaming',
+  title: 'Geese Love Merch',
+  description: 'Winner Ubisoft: Ubisoft Game Dev Challenge.',
   image: realtorSimplified,
-  date: '2023-01',
-  service: 'Saas application',
-  url: 'https://realtorsimplified-git-master-alejandrogomezes-projects.vercel.app/',
+  date: '2024-07',
+  service: 'Game',
+  url: 'https://devpost.com/software/gesse-love-merch?ref_content=my-projects-tab&ref_feature=my_projects',
   pathname: '/apps/realtor-simplified',
   framework: 'next',
 };
@@ -93,20 +93,15 @@ export const technologies = [
   <Section id="challenge">
     ## Challenge
 
-    Design & Develop a platform that desploys a premade template within minutes. This application needs to have multiple services coupled together:
+    At Hack the North 2024, I participated in the Ubisoft Game Development Challenge, where the goal was to design and develop a game within 36 hours based on a surprise theme revealed at the event.
+    
+    We had full creative freedom to use any engine, framework, or library to bring our ideas to life. The challenge pushed us to think fast, be innovative, and create a polished game experience under tight time constraints.
+    
+    The judging criteria focused on:
 
-    1. Dedicated static image hosting service, Digital Ocean Spaces (S3 wrapper).
-    2. Dedicated mongodb database from Digital Ocean.
-    3. Mapbox api key for their tiles service.
-    4. Dedicated application hosting for a NextJS app in Digital Ocean's App Platform.
-
-    - All of this resources need to be provisioned automatically, and coupled together without any human interaction.
-
-    - User should be able to manage Admin users and access to the app's dashboard.
-
-    - User should be able to assign a custom domain for the application.
-
-    - Admin users, should be able to modify the static content of the website as well as dynamic content, such as property listings, realtors, images, etc.
+    1. Creativity: How unique and engaging the concept was.
+    2. Gameplay: The overall user experience, mechanics, and fun factor.
+    3. Adherence to the Theme: How well the game aligned with the surprise theme.
 
   </Section>
 
@@ -118,38 +113,25 @@ export const technologies = [
 
 <AppSolution image='realtor-simplified.png' href={appData.url}>
   
-Realtor Simplified Saas is split in 3 different systems. Each of this systems is hosted in their own server and they communicate through apis.
+The Problem:
+When our team went to Hack the North, we were super excited to catch some of the iconic goose merch handed out at the opening ceremony. We sat in what we thought was the best spot to catch the flying geese—right in the front row of the second floor. Unfortunately, every goose launched towards our section either missed or fell down, leaving us empty-handed. Disappointed but inspired, we decided to turn that moment into something fun.
 
-The first system 'Shop' is a NextJs application that faces the user. It is where a user can register, manage their subscription, and choose which template to deploy.
-Once a template is deployed this is also where that user is able to change the template, add admin users that can access the application dasboard's and where they can add
-a custom domain for the application.
+The Solution:
+We created Geese Love Merch, a game based on our experience at Hack the North. The game takes place in Lazarus Hall (where it all happened!) and stars an awesome goose on wheels as the main character. The goal of the game is simple: fire merch at sponsors who randomly pop up in the audience every 6 seconds. For each sponsor you hit, you score points and get closer to winning the ultimate prize—a dream internship!
 
-The second system 'Server' is a small express server that serves as a connection between the 'Shop' and the 'Worker' system. It's job is to recieve orders from the 'Shop'
-and initialize any of the 3 job sequences available:
+How It Works:
+Main Character: The goose on wheels with a merch cannon.
+Gameplay: Shoot merch at sponsors that randomly appear in different seats.
+Timing: Sponsors show up every 6 seconds, keeping the game fast and challenging.
+Objective: Hit as many sponsors as possible and rack up points to win.
+How We Built It:
+We had little to no experience with Unity and C#, but we decided to take on the challenge and learn on the spot. We used Blender to create our 3D models, added animations and sound effects, and gave the game a fun, lively atmosphere. Tools like the Unity Asset Store helped us speed things up, and we used VSCode and GitHub to collaborate.
 
-<ul role="list" className="mt-6 space-y-8">
-  <li>
-    <span>
-      <strong className="font-semibold text-blue-100">Initial Deployment (user triggered):</strong> This sequence is executed when a newly subscribed user deploys an application for the first time.
-      The necessary resources previously mentioned will be provisioned from digital ocean.
-    </span>
-  </li>
-  <li>
-    <span>
-      <strong className="font-semibold text-blue-100">Redeployment (user triggered)</strong> This sequence is executed when a subscribed user with an active application wants to change the selected
-      template, or when they want to change the domain name of the application. Adding or deleting admin users can be achieved without redeploying.
-    </span>
-  </li>
-  <li>
-    <span>
-      <strong className="font-semibold text-blue-100">Delete Application (system triggered)</strong> Whenever a user deletes their subscription the system will start a delete sequence that will delete
-      all of their resources.
-    </span>
-  </li>
-</ul>
+Challenges We Faced:
+Learning Unity & C# in a Day: We had to teach ourselves how to use Unity and C# within 36 hours.
+Collaboration Problems: Unity projects can be tricky to work on as a team—pushing changes at the same time caused crashes, which slowed us down.
+Idea Overload: We had around 4–5 different ideas before finally committing to Geese Love Merch.
 
-The last system 'Worker' is a series of redis queues that execute in sequence depending on which queue they start at. It is important to note, that job error handling and job initialization is only done
-by the 'Server' this is why the 'Worker' needs to notify the 'Server' whenever a job is finished correctly or incorrectly.
 
 </AppSolution>
 

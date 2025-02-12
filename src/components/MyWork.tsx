@@ -17,9 +17,9 @@ interface Project {
 const projects: Project[] = [
   {
     href: '/apps/realtor-simplified',
-    name: 'Realtor Simplified',
+    name: 'Geese Love Merch',
     full: true,
-    description: ' saas platform that enables realtors to deploy a professional website in minutes.',
+    description: ' Winner at biggest Hackathon in Canada - Hack the North.',
     image: { src: realtorSimplified },
   },
   {

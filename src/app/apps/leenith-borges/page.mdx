@@ -4,12 +4,12 @@ import { leenithBorges } from '../../../../public/projects'
 
 export const appData = {
   industry: 'Art & Painting',
-  title: 'Leenith Borges',
+  title: 'Safe Guard',
   description: 'Leenith Borges is a popular paint artist in Mexico, based in Monterrey, NL. she sells her courses online.',
   image: leenithBorges,
   date: '2022-08',
   service: 'E-commerce',
-  url: 'https://leenithborges-arte.com/',
+  url: 'https://devpost.com/software/safeguard-p38riq',
   pathname: '/apps/leenith-borges',
   framework: 'react',
 };
@@ -79,19 +79,13 @@ export const technologies = [
 
   <Section id="challenge">
     ## Challenge
+    The team that performs the best overall in both the Hack and Pitch categories. They have created a unique and innovative Hack, which encompasses the values presented by TechNova. All teams who submit a project, will be considered for this prize!
 
-    Replace and existing website by translating a Figma design to a web application using ReactJS, Bootstrap and Sass for the Front-End, Firebase for the Back-End, 
-    Mailchimp to send emails to users, and Hotmart as the payment processing system.
-
-    - Master Admin should be able to create new courses for users.
-
-    - Master Admin should be able to see sell orders in the dashboard.
-
-    - Master Admin should be able to add/delete courses from any user.
-
-    - Users should be able to authenticate themselves.
-
-    - Send Emails on signup, on new course releases, and whenever a user buys a course.
+    As teens on the internet, we are well aware of the effects of social media on mental health. Social media consistently promotes triggering content, such as mental health disorders, eating disorders and serious topics like suicide, to young viewers. A report from the Center for Countering Digital Hate found that vulnerable teenagers’ accounts were sent 12 times as many self-harm videos as standard accounts (The Times, 2022).
+    
+    This is what created SafeGuard.
+    
+    Young viewers and minority groups who are being profited off of with harmful content deserve a shield between them and the exploitative digital landscape, ensuring their online experiences are safe and empowering.
 
   </Section>
 
@@ -103,12 +97,26 @@ export const technologies = [
 
 <AppSolution image='leenith-borges.png' href={appData.url}>
 
-Leenith Borges's website is mainly powered by Firebase. The website is hosted on Firebase Hosting, the database is on Firestore, and the authentication 
-system is on Firebase Auth.
+SafeGuard is based around a point system. User can climb up levels by using our features and practicing cyber safety habits.
 
-The system's logic such as creating new courses, deleting courses, and seeing sell orders is handled by Firebase Cloud Functions.
+Let's talk features
 
-All of the mailing is handled by Mailchimp, which is integrated inside Firebase Cloud Functions.
+⭐ Triggering content detector
+
+Our program possesses the capability to analyze a wide range of multimedia content, including videos and images, and determines if they need to be flagged due to potential triggering or sensitive material. This is our way of standing between our users and harmful or negative content they may be exposed to.
+
+⭐ Impersonation detector
+
+Users may upload and image of themselves for our program to search the web for similar or identical photo's, after which we provide links where those photos are used. This allows those with public, or even private accounts, to protect themselves from impersonation or doxing.
+
+The large majority of the technology we used for SafeGuard we went into cold, with no experience.
+
+For the trigger content detector, we used machine learning to build an AI model which we trained to recognize triggering words and sentence, along with positives ones. We then added features to feed media content to our model. This includes uploading images, then recognizing any text on the image and turning it into a string, and uploading video's to be turned into string-formatted transcripts, which can then be fed to our model to flag for negative words.
+
+The Impersonation Detector uses a SerpAPI in conjunction with Google's reverse-image module to search the internet with an image and return links including the image. Our original attempt at this feature used DeepFace to detect identical faces in images, and we later had to scrap that idea and used Google's image search feature to our advantage.
+
+Figma is a prototyping and design tool, which we used to map out the different screens and functions for our mobile application.
+
 
 </AppSolution>
 

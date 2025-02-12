@@ -3,12 +3,12 @@ import Image from 'next/image';
 import { template1 } from '../../../../public/projects';
 export const appData = {
   industry: 'Real Estate',
-  title: 'Template 1',
-  description: 'Template available for deployment at the realtor simplified platform.',
+  title: 'SM Travel',
+  description: 'Japan Travel Native Mobile App.',
   image: template1,
   date: '2022-10',
   service: 'Web application',
-  url: 'https://template-1.realtorsimplified.com/',
+  url: 'https://github.com/samriddhimakasare25/SM-travel-app',
   pathname: '/apps/realtor-template-1',
   framework: 'next',
 };
@@ -91,20 +91,12 @@ export const technologies = [
 
   <Section id="challenge">
     ## Challenge
-
-    Design & Develop a template that can be deployed by a user in the realtor simplified platform. This template should be a reusable skeleton that can be
-    re-skinned with different colors and images. 
+    When traveling, especially in a foreign country, it’s often overwhelming to find the best places to visit. You can get lost in an endless sea of blogs, travel guides, and review sites, each with conflicting information. I’ve experienced this frustration firsthand while traveling. Finding a reliable and consolidated source of information felt like searching for a needle in a haystack.
     
-    The template should display a list of properties, a list of realtors, and a contact form. It also needs to display a map with the location of the properties, 
-    and have a dashboard where admin users can manage the content of the website.
+    According to a recent travel survey, over 65% of tourists say they struggle to find reliable information on local attractions and restaurants when traveling. 40% of travelers waste nearly 2 hours per day searching for places to visit or eat, which takes away valuable time they could spend enjoying their trip.
+    
+    This inspired me to create SM-Travel, an app that simplifies the travel experience. I wanted it to become a one-stop solution for discovering hotels, restaurants, and attractions, all in one place. My goal was to provide real-time, accurate information and an interactive map to help users find and navigate these places effortlessly.
 
-    - Dashboard should only be accessible to admin users.
-
-    - Add/Modify/Delete property listings.
-
-    - Add/Modify/Delete realtors.
-
-    - Change static content of the website.
 
   </Section>
 
@@ -115,15 +107,38 @@ export const technologies = [
 ## Solution
 
 <AppSolution image='realtor-template-1.png' href={appData.url}>
-  
-Template built to be deployed in the realtor simplified platform. Something that was taken into considaration was that the site had to be easy to use and maintain.
+Centralized Information
+Instead of wasting hours browsing multiple websites, travelers can search for everything they need in one app:
 
-This initial template is geared towards small real estate companies or agents that want to have a web presence.
+Hotels
+Restaurants
+Attractions
+Location maps
+Real-Time Data Integration
+The app pulls accurate and updated information from reliable third-party sources such as Google Places API and Travel Advisor API, ensuring users always have access to the latest details on:
 
-The Front-End is built with ReactJS and NextJS, the database used is MongoDB, for the static images a Digital OCean Spaces is used, and for the map a Mapbox API and Leaflet is used.
+Descriptions, images, and pricing.
+Location, operating hours, and contact details.
+Interactive Map
+The built-in interactive map allows users to:
 
+Visualize nearby attractions and hotels.
+Get real-time directions through Google Maps.
+Discover hidden gems around their current location.
+User-Centric Design
+The app focuses on usability and simplicity:
 
-The most importat components in this template are the Map, since it can be used in pretty much any other template, and the Dashboard, since it allows the user to manage the content of the website.
+Search by keyword or city name (e.g., "Shibuya" or "Kyoto") to get filtered results instantly.
+Mobile-first design ensures the app works seamlessly on both Android and iOS devices.
+Personalized Experience
+Travelers can save favorite locations and receive tailored recommendations for top-rated attractions and restaurants in their area.
+
+Future-Ready Features
+Plans for future improvements include:
+
+Offline support, so users can access recently viewed content even without an internet connection.
+User reviews for an even more personalized experience.
+Booking Integration to reserve hotels and attractions directly from the app.
 
 </AppSolution>
 

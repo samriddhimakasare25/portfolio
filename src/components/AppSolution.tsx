@@ -17,7 +17,7 @@ export default function AppSolution({ image, href, children }: { image?: string;
                 />
               </svg>
 
-              <span className="text-sm">High level architecture of the application.</span>
+              <span className="text-sm">Image of application.</span>
             </p>
           </div>
         )}
